@@ -1,5 +1,10 @@
 # kafka-java-app-group1
 
+## Team Lead
+## Rohith Chittimalla:
+
+### GitHub Profile: https://github.com/rohith0696
+
 ## Team Members
 ## Vikas Baswpauram:
 
