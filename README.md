@@ -26,6 +26,13 @@
 .\bin\windows\kafka-server-start.bat .\config\server.properties
 ```
 
+## Building the Fat Jar File:
+
+- Go the project's root folder and open the powershell window and use the following command to create a Fat Jar file.
+
+```
+mvn clean compile assembly:single
+```
 
 
 
