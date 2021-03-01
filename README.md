@@ -34,6 +34,14 @@
 mvn clean compile assembly:single
 ```
 
+## Starting the consumer:
+
+- While in the project's root folder open another powershell window and use the following command to start the Consumer.
+
+```
+java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdata.group1.Consumer kafkavikas group1
+```
+- Here my topic name is kafkavikas group1 
 
 
 ### Harish Thadka:
