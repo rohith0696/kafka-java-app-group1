@@ -11,13 +11,23 @@
 
 ## Steps to run the Java Kafka App
 
-## Command to run the Zookeeper:
+## Command to run the Zookeeper Service:
 
-- To start the zookeeper service, use the following command in the kafka folder.
+- To start the zookeeper service, open the powershell and use the following command in the kafka folder.
 
 ```
 .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
 ```
+## Command to run the Kafka Service:
+
+- To start the kafka service, open the powershell and use the following command in the kafka folder.
+
+```
+.\bin\windows\kafka-server-start.bat .\config\server.properties
+```
+
+
+
 
 ### Harish Thadka:
 - GitHub Profile: https://github.com/harishThadka
