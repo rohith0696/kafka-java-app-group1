@@ -42,7 +42,15 @@ mvn clean compile assembly:single
 java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdata.group1.Consumer kafkavikas group1
 ```
 - Here my topic name is kafkavikas group1 
+- You will want to keep this window open to see the output after starting the producer.
 
+## Starting the Producer:
+
+- While in the project's root folder open another powershell window and use the following command to start the Producer.
+
+```
+java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdata.group1.VikasProducer kafkavikas
+```
 
 ### Harish Thadka:
 - GitHub Profile: https://github.com/harishThadka
