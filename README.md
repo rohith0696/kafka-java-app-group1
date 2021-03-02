@@ -4,6 +4,53 @@
 ### Rohith Chittimalla:
 - GitHub Profile: https://github.com/rohith0696
 
+### Steps to run the Java Kafka App
+
+#### Command to start Zookeeper Service:
+
+- To start the zookeeper service, open the powershell window in the kafka folder and use the following command.
+
+```
+.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+```
+#### Command to start Kafka Service:
+
+- To start the kafka service, open the powershell window in the kafka folder and use the following command.
+
+```
+.\bin\windows\kafka-server-start.bat .\config\server.properties
+```
+
+#### Command to creating the topic
+
+```
+ .\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --create --topic java
+ ```
+
+#### Building the Fat Jar File:
+
+- Go to the project's root folder and open the powershell window and use the following command to create a Fat Jar file.
+
+```
+mvn clean compile assembly:single
+```
+
+#### Starting the Consumer:
+
+- Go to the project's root folder and open the powershell window and use the following command using topic "java" and group1 with:
+
+```
+java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdata2PM1.Consumer java group1
+```
+
+#### Starting the Producer:
+
+- Go to the project's root folder and open the powershell window and use the following command using topic "java"
+
+```
+java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdata2PM1.RohithProducer java
+```
+
 ## Team Members
 
 ### Vikas Baswpauram:
