@@ -68,11 +68,11 @@ private static String gcdNumber() {
         int randNum = rand.nextInt(num.length);        
         Random rand2 = new Random();
         int randNum2 = rand.nextInt(num1.length);
-        for(int i = 1; i <= num && i <= num1; i++)
+        for(int i = 1; i <= randNum && i <= randNum2; i++)
         {
-            if(num%i==0 && num1%i==0)
+            if(randNum%i==0 && randNum2%i==0)
                 gcd = i;
         }
-        return "GCD of "+num[randNum] + " and "+num1[randNum2]+" is "+gcd;
+        return "GCD of "+num[randNum]+ " and "+num1[randNum2]+" is "+gcd;
     }
 }
