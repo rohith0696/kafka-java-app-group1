@@ -102,6 +102,23 @@ java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmiss
 ### Harish Thadka:
 - GitHub Profile: https://github.com/harishThadka
 
+### Steps to run my producer app:
+#### Run consumer:
+
+- Go to the project's root folder and open the powershell window and use the following command using topic "greeting" and group1 with:
+
+```
+java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdata2PM1.Consumer greeting group1
+```
+
+#### Run Producer:
+
+- Go to the project's root folder and open the powershell window and use the following command using topic "java"
+
+```
+java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdata2PM1.ProducerHarish java
+```
+
 ### Bihani Tamang:
 - GitHub Profile: https://github.com/blonbihani
 
