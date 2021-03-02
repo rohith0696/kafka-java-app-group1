@@ -24,7 +24,7 @@
 #### Command to creating the topic
 
 ```
- .\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --create --topic java
+ .\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --create --topic gcd
  ```
 
 #### Building the Fat Jar File:
@@ -37,10 +37,10 @@ mvn clean compile assembly:single
 
 #### Starting the Consumer:
 
-- Go to the project's root folder and open the powershell window and use the following command using topic "java" and group1 with:
+- Go to the project's root folder and open the powershell window and use the following command using topic "gcd" and group1 with:
 
 ```
-java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdata2PM1.Consumer java group1
+java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdata2PM1.Consumer gcd group1
 ```
 
 #### Starting the Producer:
@@ -103,6 +103,12 @@ java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmiss
 - GitHub Profile: https://github.com/harishThadka
 
 ### Steps to run my producer app:
+
+#### Create the topic
+
+```
+ .\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --create --topic greeting
+ ```
 #### Run consumer:
 
 - Go to the project's root folder and open the powershell window and use the following command using topic "greeting" and group1 with:
