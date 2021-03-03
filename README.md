@@ -131,6 +131,14 @@ java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmiss
 ### Puneeth Annam:
 - GitHub Profile: https://github.com/Puneeth159
 
+### Starting Consumer
+
+java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdata.group1.Consumer squares group1
+
+### Starting Producer
+
+java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdata.group1.PuneethProducer square
+
 ### Rohith Reddy Avisakula:
 - GitHub Profile: https://github.com/Avisakula123
 
