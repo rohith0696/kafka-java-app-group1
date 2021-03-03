@@ -137,7 +137,7 @@ java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmiss
 
 ### Starting Producer
 
-java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdata.group1.PuneethProducer square
+java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdata.group1.PuneethProducer squares
 
 ### Rohith Reddy Avisakula:
 - GitHub Profile: https://github.com/Avisakula123
